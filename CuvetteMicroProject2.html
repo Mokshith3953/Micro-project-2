@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Delius+Unicase&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .mainbox{
+                border:none;
+            }
+            .navbar{
+                background-color:#6F6AF7;
+                display: flex;
+                flex-direction: row;
+                color:#FFFFFF;
+                margin:2px;
+                position:fixed;
+                width:1200px;
+
+            }
+            .oll{
+                list-style-type: none;
+                font-family: DM Sans;
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 47px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            li{
+                padding:10px;
+                display: inline;
+               
+                }
+             /*   .hi{
+                    height:2000px;
+                    width: 150px;
+                    border:1px solid black;
+                }*/
+            .sta{
+                margin-top: 15px;
+                margin-left: 20px;
+                font-family: Delius Unicase;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 79px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            .mor{
+                font-size: 16px;
+                height:15px;
+                width: 20px;
+                
+            }
+            .search-box{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 160px;
+                font-size: 16px;
+                border: none;
+                border-radius: 20px;
+                padding-left: 12px;
+                color: #ADADAD;
+                outline: none;
+            }
+            .dis{
+                margin-top: 250px;
+                margin-left:80px;
+                width:300px;
+                height: 400px;
+            }
+            .box3{
+                height: 400px;
+                width:660px;
+                margin-top: 250px;
+                margin-left:50px;
+                background-color: #E5D8FF;
+                color: #6F7373;
+                
+            }
+            .box2{
+                display: flex;
+                flex-direction: row;
+            }
+            .b3t1{
+                font-family: DM Sans;
+                font-size: 22px;
+                font-weight: 200;
+                line-height: 52px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding-left: 30px;
+                padding-top: 15px;
+
+            }
+            .sa1{
+                margin-left: 35px;
+                width: 250px;
+                height:100px;
+                margin-top: 100px;
+                font-family: DM Sans;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 52px;
+                letter-spacing: 0.04em;
+                text-align: center;
+                
+
+            }
+            .r1{
+            background-color: #929DFF;
+            color: #FFFFFF;
+            }
+            .r2{
+                background-color: #734CF2;
+                color:#ffffff;
+            }
+            .r3{
+                background-color: #D288FF;
+                color:#ffffff;
+            }
+            .r4{
+                background-color: #000000;
+                color:#ffffff;
+
+            }
+            .box5{
+                background-color: #483EFF;
+                margin-top:100px;
+                height:400px;
+                margin: 50px;
+                display: flex;
+                flex-direction: row;
+                width: auto;
+            }
+            .infbox{
+                height:300px;
+                width:700px;
+                background-color: #ffffff;
+                border: 1px solid black;
+                margin-left: 40px;
+                margin-top: 50px;
+            }
+            .yoi{
+                text-align: left;
+                margin-top: 20px;
+                color: #04285A;
+                font-family: Inter;
+                font-size: 28px;
+                font-weight: 500;
+                letter-spacing: 0.105em;
+                text-align: left;
+                padding:25px;
+                
+
+            }
+            .nam{
+                font-family: Inter;
+                font-size: 30px;
+                font-weight:500;
+                letter-spacing: 0.105em;
+                text-align: left;
+                color: #04285A;
+                padding-left: 35px;
+            }
+            .namans{
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                padding-left: 20px;
+                color: #143565;
+
+
+            }
+            .sqco{
+                border:1px solid white;
+
+            }
+            .sq1{
+                width: 250px;
+                height: 65px;
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            .mo1{
+                background-color:#BCE0F6;
+                color: #000000;
+                font-family: DM Sans;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 63px;
+                letter-spacing: 0.04em;
+                text-align: center;
+            }
+            .mo2{
+                font-family: DM Sans;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 63px;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color:#ffffff
+
+            }
+            .rowflexing{
+                display: flex;
+                flex-direction: row;
+            }
+            .flri{
+                float: right;
+            }
+            .search-box{
+            border: none;
+            padding: 5 10px;
+            background-color: #FFF;
+            border-radius: 20px;
+             }
+             .search{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 160px;
+                font-size: 16px;
+                border: none;
+                border-radius: 20px;
+                padding-left: 12px;
+                color: #ADADAD;
+            }
+
+            .search:focus{
+                outline: none;
+            }
+            body{
+                margin:0;
+                padding: 0;
+            }
+            .img1{
+                position: fixed;
+                 bottom: -4px;
+                right: 10px;          
+            }
+            .socrec{
+                /*height:200px;
+                width:200px;*/
+                border: 1px solid black;
+                background-color: black;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .socflex{
+                display: flex;
+                flex-direction: column;
+            }
+            .b1{
+                padding-left: 40px;
+            }
+            ul.info-list {
+            list-style-type: none;
+            }
+            ul.info-list li b {
+            position: relative;
+            display: inline-block;
+            min-width: 144px;
+            margin-right: 4px;
+            }
+            ul.info-list li b:after {
+            content: ":";
+            position: absolute;
+            right: 0;
+            }
+            .float{
+                position: scroll;
+                float: right;
+            }
+            .but{
+                margin-left:500px;
+                background-color: black;
+                color: white;
+                border: none;
+                height: 40px;
+                width: 150px;
+                margin-top: -40px;
+                font-size: 28px;
+            }
+            .boxing{
+                padding:10px 10px;
+                border:none;
+                border-radius: 40px;
+                background-color:white;
+            }
+            .icon-bar{
+                margin-top: 16em;
+                float:right;
+                position: sticky;
+                top: 8em;
+            }
+
+
+        </style>
+    </head>
+    <body>
+   
+        <div class="mainbox">
+           <div class="navbar">
+            <text class="sta">dappr</text>
+            <ol class="oll">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>More<i class="fa-solid fa-chevron-down"></i></li>
+                <li class="search-box">
+                    <tr>
+                        <td><input type="search" placeholder="Search...." class="search">
+                        </td>
+                        <td style="padding-left: 80px;">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ADADAD;" ></i></a>
+                        </td>
+                    </tr>
+                </li>
+                <li style="padding-left: 30px;"><i class="fa-solid fa-bars"></i></li>
+            </ol>
+            </div>
+            <div class="icon-bar">
+                <img src="Frame 1.png" />
+            </div>
+            <div class="box2">
+                
+            <div>
+                <img class="dis" src="image 4.png"/>
+                <div class="boxing">
+                <img class="img1 boxing" src="Vector (2).png"/>
+                </div>
+            </div>
+            <div class="box3 b3t1">
+                It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a ......
+            </div>
+             </div>
+            <div class="box2">
+                <div class="sa1 r1" >
+                    <text>Total Question’s</text>
+                    <text>200,000</text>
+                </div>
+                <div class="sa1 r2">
+                    <text>Total Answer’s</text><br/>
+                    <text>105,000</text>
+
+                </div>
+                <div class="sa1 r3">
+                    <text>Participated</text><br/>
+                    <text>10,000</text>
+
+                </div>
+                <div class="sa1 r4">
+                    <text>Total Passed</text><br/>
+                    <text>6,000</text>
+
+                </div>
+
+            </div>
+            <div class="box5">
+                <div>
+                    <div class="sqco sq1 mo1">
+                        <text>YOUR INFO</text>
+                    </div>
+                    <div class="sqco sq1 mo2">
+                        <text>BOOKMARKS</text>
+                    </div>
+                    <div class="sqco sq1 mo2">
+                        <text>SETTINGS</text>
+                    </div>
+
+
+                </div>
+                <div class="infbox">
+                    <h1 class="yoi"><b>Your information</b></h1>
+                    <ul class="info-list">
+                        <li><b class="nam">Name</b><text class="namans"> Atul Singhal </text></li><br/>
+                        <li><b class="nam">Email</b> <text class="namans">atul@gmail.com</text></li><br/>
+                        <li><b class="nam">Phone </b><text class="namans">+91 8131424888 </text</li><br/>
+                        <li><b class="nam">Marks</b><text class="namans">500.00</text></li><br/>
+                        
+                        <button class="but">Next<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+               
+                    </ul> </div>
+            </div>
+        </div>
+    </body>
+</html>
